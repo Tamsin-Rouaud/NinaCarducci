@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 
-<html lang="fr">  <!-- Ajout attribut lang=fr -->
-
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Description de votre page" />  <!-- Ajout de la balise meta pour décrire le contenu -->
-    <meta name="robots" content="index, follow" />   <!-- Ajout de la balise meta robots pour que les moteurs de recherches indexent et suivent cette page -->
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet"/>
-    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>   <!-- Ajout de l'attribut defer dans la balise script -->
-    <script defer src="./assets/maugallery.js"></script>   <!-- Ajout de l'attribut defer dans la balise script -->
-    <script defer src="./assets/scripts.js"></script>    <!-- Ajout de l'attribut defer dans la balise script -->
-    <title>Nina Carducci - Photographe Professionnelle</title>   <!-- Ajout d'une balise title -->
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" defer/>
+    <link rel="stylesheet" href="./assets/style.css" defer />
+    <link rel="preconnect" href="https://fonts.googleapis.com" defer/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin defer/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" defer/>
+    <script defer  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script defer async src="./assets/bootstrap/bootstrap.bundle.js"></script>
+    <script defer src="./assets/maugallery.js"></script>
+    <script defer src="./assets/scripts.js"></script>
+    <title>Nina Carducci - Photographe Professionnelle</title>
   </head>
-
   <body>
-
-    <header>   <!-- Remplacement de la balise div par une balise header et supression de la class "top-header"-->
-      <h1>Nina Carducci</h1>   <!-- Modification de la balise h3 en h1 et supression de la class ".name" -->
-      <nav>    <!-- Ajout balise nav et retrait de la class "nav", aucune valeur ajouté -->
+    <header class="top-header">
+      <h1>Nina Carducci</h1>
+      <nav>
         <ul>
           <li><a href="#about">À propos</a></li>
           <li><a href="#gallery">Galerie</a></li>
@@ -31,16 +28,14 @@
           <li><a href="#contact">Contact</a></li>
           <li>
             <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
-              <img src="assets/images/instagram.png" alt="Lien vers la page Instagram"/> <!-- Ajout de l'attribut alt complété -->
+              <img src="assets/images/instagram.png" alt="Lien vers la page Instagram"/>
             </a>
           </li>
         </ul>
       </nav>
     </header>
-
-    <main>   <!-- Ajout balise main -->
-
-      <section id="header">    <!-- Remplacement de la balise div par une balise section et report de l'id "header" -->
+    <main>
+      <section id="header">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -49,16 +44,15 @@
           </div>
           <div class="carousel-inner">
             <picture class="carousel-item active">
-              <source srcset=".\assets\images\slider\ryoji-iwata-homme-malette.webp" type="image/webp"/> <!-- optimisation du format d'images-->
-              <img src=".\assets\images\slider\ryoji-iwata-homme-malette.jpg" class="d-block w-100" alt="Homme en costume avec malette"/> <!-- Format d'images prevus pour les anciens navigateurs et redaction attribut alt -->
+              <source srcset=".\assets\images\slider\ryoji-iwata-homme-malette.webp" type="image/webp"/>
+              <img src=".\assets\images\slider\ryoji-iwata-homme-malette.jpg" class="d-block w-100" alt="Homme en costume avec malette"/>
             </picture>
             <picture class="carousel-item">
-              <source srcset=".\assets\images\slider\nicholas-green-foule-concert.webp" type="image/webp"/> <!-- optimisation du format d'images-->
-              <img src="./assets/images/slider/nicholas-green-foule-concert.jpg" class="d-block w-100" alt="Jeunes adultes foule concert."/> <!-- Format d'images prevus pour les anciens navigateurs et redaction attribut alt -->
-            </picture>
+              <source srcset=".\assets\images\slider\nicholas-green-foule-concert.webp" type="image/webp"/>
+              <img src="./assets/images/slider/nicholas-green-foule-concert.jpg" class="d-block w-100" alt="Jeunes adultes foule concert."/>
             <picture class="carousel-item">
-              <source srcset="./assets/images/slider/edward-cisneros-mariée-ouverture-bal.webp" type="image/webp"/> <!-- optimisation du format d'images-->
-              <img src="./assets/images/slider/edward-cisneros-marié-ouverture-bal.jpg" class="d-block w-100" alt="Danse de marié piste de danse"/> <!-- Format d'images prevus pour les anciens navigateurs et redaction attribut alt -->
+              <source srcset="./assets/images/slider/edward-cisneros-mariée-ouverture-bal.webp" type="image/webp"/>
+              <img src="./assets/images/slider/edward-cisneros-marié-ouverture-bal.jpg" class="d-block w-100" alt="Danse de marié piste de danse"/>
             </picture>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -72,15 +66,15 @@
         </div>
       </section>
 
-      <section id="about">   <!-- Remplacement de la balise div par la balise section et ajout de l'id "about" -->
+      <section id="about">
         
         <picture class="picture left">
-          <source srcset="./assets/images/nina-carducci-photographe.webp" type="image/webp"> <!--optimisation du format d'images-->
-          <img src="./assets/images/nina-carducci-photographe.png" alt="Portrait photographe Nina Carducci" > <!--AJout-loading=lazy - Format d'images prevus pour les anciens navigateurs et redaction de l'attribut alt-->
+          <source srcset="./assets/images/nina-carducci-photographe.webp" type="image/webp">
+          <img src="./assets/images/nina-carducci-photographe.png" alt="Portrait photographe Nina Carducci" >
         </picture>
         <div id="about-me">
-          <h2 class="about-me__title">A propos de moi</h2>   <!-- Remplacement de la balise h3 par une balise h2 -->
-          <p class="about-me__introduction">   <!-- Remplacement de la balise h6 par une balise p -->
+          <h2 class="about-me__title">A propos de moi</h2>
+          <p class="about-me__introduction">
             Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un
             endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.
           </p>
@@ -94,39 +88,34 @@
         </div>
       </section>
 
-      <section id="gallery">   <!-- Remplacement de la balise div par balise section et ajout de l'id "gallery" -->
+      <section id="gallery">
         <h2 class="title">Portfolio</h2>
         <div class="container py-3">
           <picture class="gallery" style="display: none">
-            <source srcset="./assets/images/gallery/concerts/concert-aaron-paul.webp" type="image/webp"><!-- optimisation du format d'images-->
-            <source srcset="./assets/images/gallery/entreprise/portrait-pro-ali-morshedlou.webp" type="image/webp"><!-- optimisation du format d'images-->
-            <source srcset="./assets/images/gallery/entreprise/portrait-pro-jason-goodman.webp" type="image/webp"><!-- optimisation du format d'images-->
-            <source srcset="./assets/images/gallery/mariage/mariage-mains-hannah-busing.webp" type="image/webp"><!-- optimisation du format d'images-->
-            <source srcset="./assets/images/gallery/portraits/portrait-ade-tunji.webp" type="image/webp"><!-- optimisation du format d'images-->
-            <source srcset="./assets/images/gallery/mariage/mariage-jakob-owens-sini.webp" type="image/webp"><!-- optimisation du format d'images-->
-            <source srcset="./assets/images/gallery/portraits/portrait-nino-van-prattenburg.webp" type="image/webp"><!-- optimisation du format d'images-->
-            <source srcset="./assets/images/gallery/concerts/concert-austin-neill.webp" type="image/webp"><!-- optimisation du format d'images-->
-            <source srcset="./assets/images/gallery/entreprise/portrait-pro-mateus-campos-felipe.webp" type="image/webp"><!-- optimisation du format d'images-->
-            <img data-gallery-tag="Concert" loading="lazy" class="gallery-item" src="./assets/images/gallery/concerts/concert-aaron-paul.jpg" alt="Jeux de lumières rouge dans un concert"> <!-- Ajout loading=lazy - Format d'images prevus pour les anciens navigateurs et rédaction de l'attribut alt-->
-            <img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/portrait-pro-ali-morshedlou.jpg" alt="Portrait jeune homme en costume"> <!-- Ajout loading=lazy - Format d'images prevus pour les anciens navigateurs et rédaction de l'attribut alt-->
-            <img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/portrait-pro-jason-goodman.jpg" alt="Une femme assise bureau avec d'autres personnes"> <!-- Ajout loading=lazy - Format d'images prevus pour les anciens navigateurs et rédaction de l'attribut alt-->
-            <img data-gallery-tag="Mariages" loading="lazy" class="gallery-item" src="./assets/images/gallery/mariage/mariage-mains-hannah-busing.jpg" alt="Union de mains d'un couple de marié"> <!-- Ajout loading=lazy - Format d'images prevus pour les anciens navigateurs et rédaction de l'attribut alt-->
-            <img data-gallery-tag="Portrait" loading="lazy" class="gallery-item" src="./assets/images/gallery/portraits/portrait-ade-tunji.jpg" alt="Homme fermant les yeux au soleil"> <!-- Ajout loading=lazy - Format d'images prevus pour les anciens navigateurs et rédaction de l'attribut alt-->
-            <img data-gallery-tag="Mariages" loading="lazy" class="gallery-item" src="./assets/images/gallery/mariage/mariage-jakob-owens-sini.jpg" alt="Jeune mariés  rigolant "> <!-- Ajout loading=lazy - Format d'images prevus pour les anciens navigateurs et rédaction de l'attribut alt-->
-            <img data-gallery-tag="Portrait" loading="lazy" class="gallery-item" src="./assets/images/gallery/portraits/portrait-nino-van-prattenburg.jpg" alt="Jeune femme portant des lunettes"> <!-- Ajout loading=lazy - Format d'images prevus pour les anciens navigateurs et rédaction de l'attribut alt-->
-            <img data-gallery-tag="Concert" loading="lazy" class="gallery-item"  src="./assets/images/gallery/concerts/concert-austin-neill.jpg" alt="Homme avec micro nuage de fumée "> <!-- Ajout loading=lazy - Format d'images prevus pour les anciens navigateurs et rédaction de l'attribut alt-->
-            <img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/portrait-pro-mateus-campos-felipe.jpg" alt="Jeune femme rigolant devant son ordinateur portable"> <!-- Ajout loading=lazy - Format d'images prevus pour les anciens navigateurs et rédaction de l'attribut alt-->
+            <source srcset="./assets/images/gallery/concerts/concert-aaron-paul.webp" type="image/webp">
+            <source srcset="./assets/images/gallery/entreprise/portrait-pro-ali-morshedlou.webp" type="image/webp">
+            <source srcset="./assets/images/gallery/entreprise/portrait-pro-jason-goodman.webp" type="image/webp">
+            <source srcset="./assets/images/gallery/mariage/mariage-mains-hannah-busing.webp" type="image/webp">
+            <source srcset="./assets/images/gallery/portraits/portrait-ade-tunji.webp" type="image/webp">
+            <source srcset="./assets/images/gallery/mariage/mariage-jakob-owens-sini.webp" type="image/webp">
+            <source srcset="./assets/images/gallery/portraits/portrait-nino-van-prattenburg.webp" type="image/webp">
+            <source srcset="./assets/images/gallery/concerts/concert-austin-neill.webp" type="image/webp">
+            <source srcset="./assets/images/gallery/entreprise/portrait-pro-mateus-campos-felipe.webp" type="image/webp">
+            <img data-gallery-tag="Concert" loading="lazy" class="gallery-item" src="./assets/images/gallery/concerts/concert-aaron-paul.jpg" alt="Jeux de lumières rouge dans un concert">
+            <img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/portrait-pro-ali-morshedlou.jpg" alt="Portrait jeune homme en costume">
+            <img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/portrait-pro-jason-goodman.jpg" alt="Une femme assise bureau avec d'autres personnes">
+            <img data-gallery-tag="Mariages" loading="lazy" class="gallery-item" src="./assets/images/gallery/mariage/mariage-mains-hannah-busing.jpg" alt="Union de mains d'un couple de marié">
+            <img data-gallery-tag="Portrait" loading="lazy" class="gallery-item" src="./assets/images/gallery/portraits/portrait-ade-tunji.jpg" alt="Homme fermant les yeux au soleil">
+            <img data-gallery-tag="Mariages" loading="lazy" class="gallery-item" src="./assets/images/gallery/mariage/mariage-jakob-owens-sini.jpg" alt="Jeune mariés  rigolant ">
+            <img data-gallery-tag="Portrait" loading="lazy" class="gallery-item" src="./assets/images/gallery/portraits/portrait-nino-van-prattenburg.jpg" alt="Jeune femme portant des lunettes">
+            <img data-gallery-tag="Concert" loading="lazy" class="gallery-item"  src="./assets/images/gallery/concerts/concert-austin-neill.jpg" alt="Homme avec micro nuage de fumée ">
+            <img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/portrait-pro-mateus-campos-felipe.jpg" alt="Jeune femme rigolant devant son ordinateur portable">
           </picture>
-
-<!--
-       
-          -->
-                
         </div>
         <div class="quote">
           <figure>
             <blockquote>
-              <p class="quote__text">   <!-- Remplacement de la balise h1 par une balise p -->
+              <p class="quote__text">
                 Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour
                 devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
               </p>
@@ -136,10 +125,10 @@
         </div>
       </section>
 
-      <section id="services">   <!-- Remplacement de la balise div par balise section et ajout de l'id "services" -->
-        <h2 class="title">Mes services</h2>   <!-- Remplacement de la balise h3 par une balise h2 -->
+      <section id="services">
+        <h2 class="title">Mes services</h2>
           <div class="container">
-            <article class="service"> <!-- Remplacement de la balise div par article -->
+            <article class="service">
               <div class="service__description">
                 <h3>Shooting photo</h3>
                 <p>
@@ -153,7 +142,7 @@
               <span>Matériel, déplacement inclus</span>
               </div>
             </article>
-            <article class="service"> <!-- Remplacement de la balise div par article -->
+            <article class="service">
               <div class="service__description">
                 <h3>Retouches</h3>
                 <p>
@@ -167,7 +156,7 @@
                 <span>2 AR par photo</span>
               </div>
             </article>
-            <article class="service"> <!-- Remplacement de la balise div par article -->
+            <article class="service">
               <div class="service__description">
                 <h3>Album photos</h3>
                 <p>
@@ -183,10 +172,10 @@
           </div>
       </section>
 
-      <section class="quote"> <!-- Remplacement de la balise div par la balise section et la class "quote"-->
+      <section class="quote">
         <figure>
           <blockquote>
-            <p class="quote__text"> <!-- Remplacement de la balise h1 par une balise p -->
+            <p class="quote__text">
               De manière inconsciente, je crois, je guette un regard, une
               expression, des traits ou une nostalgie capable de résumer ou plus
               exactement de révéler une vie
@@ -198,26 +187,26 @@
 
     </main>
 
-    <footer id="contact"> <!-- Remplacement de la balise div par la balise footer -->
+    <footer id="contact">
       <div class="container">
         <div class="form-container">
-          <h2>Une question ? Une demande de devis ?</h2>  <!-- Remplacement du h3 par un h2 -->
+          <h2>Une question ? Une demande de devis ?</h2>
           <p>
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
           <form action="" method="post">
-            <label for="name">Nom</label><!-- Ajout de l'attribut for avec le même id que la balise input convernée -->
-            <input type="text" name="nom" id="name" />   <!-- Remplacement de l'id "nom" par "name" pour le referencement -->
-            <label for="email">Email</label>   <!-- Ajout de l'attribut for avec le même id que la balise input convernée -->
+            <label for="name">Nom</label>
+            <input type="text" name="nom" id="name" />
+            <label for="email">Email</label>
             <input type="email" name="email" id="email" />
-            <label for="message">Message</label>  <!-- Ajout de l'attribut for avec le même id que la balise textarea convernée -->
+            <label for="message">Message</label>
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
             <input type="submit" value="Envoyer" />
           </form>
         </div>
         <picture class="picture right">
-          <source srcset="./assets/images/camera.webp" type="image/webp"> <!--optimisation du format d'images-->
-          <img src="./assets/images/camera.png" alt="Appareil photo"> <!-- Ajout loading=lazy - Format d'images prevus pour les anciens navigateurs et rédaction de l'attribut alt-->
+          <source srcset="./assets/images/camera.webp" type="image/webp">
+          <img src="./assets/images/camera.png" alt="Appareil photo">
         </picture>
       </div>
     </footer>
