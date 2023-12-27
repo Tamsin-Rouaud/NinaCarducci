@@ -245,14 +245,13 @@ input[type=submit] {
   .picture {
     flex: 2
   }
+  .d-block,
   .picture.left img,
   .picture.right img {
-    width: 100%
+    width: 100%;
+    height:auto;
   }
-  .carrousel-item {
-    width: 1180px;
-    height: auto;
-  }
+  
 }
 @media all and (max-width:1000px) {
   #about,
@@ -304,15 +303,13 @@ input[type=submit] {
     right: 0;
     z-index: -1
   }
-  .d-block.w-100,
+  .d-block,
   .picture.left img,
   .picture.right img {
-    width: 100%
-  }
-  .carrousel-item {
-    width: 1000px;
+    width: 100%;
     height: auto;
   }
+  
 
 }
 @media all and (max-width:650px) {
@@ -351,8 +348,5 @@ input[type=submit] {
   form {
     width: 100%
   }
-  .carrousel-item {
-    width: 650px;
-    height: auto;
-  }
+  
 }

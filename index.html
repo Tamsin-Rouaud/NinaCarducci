@@ -12,9 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" defer/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin defer/>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" defer/>
-    <link rel="preload" href="https://tamsin-rouaud.github.io/NinaCarducci/assets/images/slider/ryoji-iwata-homme-malette-min.webp" as="image">
-    <link rel="preload" href="https://tamsin-rouaud.github.io/NinaCarducci/assets/images/slider/nicholas-green-foule-concert-min.webp" as="image">
-    <link rel="preload" href="https://tamsin-rouaud.github.io/NinaCarducci/assets/images/slider/edward-cisneros-bal-maries.webp" as="image">
+    
+    
     <title>Nina Carducci - Photographe Professionnelle sur Bordeaux</title>
         <meta name="description" content="Explorez le monde captivant de la photographie avec Nina Carducci. Découvrez des images époustouflantes capturant des moments uniques, des paysages exceptionnels et des émotions authentiques. Plongez dans l'art visuel et laissez-vous transporter par la créativité de Nina Carducci." />
     <meta name="keywords" content="photographe professionnel, photographie, Bordeaux">
@@ -81,24 +80,44 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img
-    srcset="https://tamsin-rouaud.github.io/NinaCarducci/assets/images/slider/ryoji-iwata-homme-malette-min-300x139.webp 300w,
-            https://tamsin-rouaud.github.io/NinaCarducci/assets/images/slider/ryoji-iwata-homme-malette-min-1140x528.webp 1140w,
-            https://tamsin-rouaud.github.io/NinaCarducci/assets/images/slider/ryoji-iwata-homme-malette-min-1580x732.webp 1580w,
-            https://tamsin-rouaud.github.io/NinaCarducci/assets/images/slider/ryoji-iwata-homme-malette-min-1920x889.webp 1920w"
-    sizes="(max-width: 300px) 300px,
-           (max-width: 1140px) 1140px,
-           (max-width: 1580px) 1580px,
-           (max-width: 1920px) 1920px"
-    src="https://tamsin-rouaud.github.io/NinaCarducci/assets/images/slider/ryoji-iwata-homme-malette-min.webp"
-    class="d-block w-100"
-    alt="">
+             
+              <picture>
+                <!-- Source pour les écrans larges -->
+                <source srcset="./assets/images/slider/ryoji-iwata-homme-malette.webp"
+                        media="(min-width: 1024px)">
+                
+                <!-- Source pour les écrans de taille moyenne -->
+                <source srcset="./assets/images/slider/tablette/ryoji-iwata-homme-malette-tablette.webp"
+                        media="(min-width: 768px)">
+                
+                <!-- Source par défaut pour les écrans plus petits -->
+                <img src="./assets/images/slider/mobile/ryoji-iwata-homme-malette-mobile.webp"
+                     class="d-block"
+                     alt="Description de l'image">
+              </picture>
             </div>
             <div class="carousel-item">
-              <img src="https://tamsin-rouaud.github.io/NinaCarducci/assets/images/slider/nicholas-green-foule-concert-min.webp" class="d-block w-100" alt="">
+              <picture>
+                <source srcset="./assets/images/slider/nicholas-green-foule-concert.webp"
+                        media="(min-width: 1024px)">
+                <source srcset="./assets/images/slider/tablette/nicholas-green-foule-concert-tablette.webp"
+                        media="(min-width: 768px)">
+                <img src="./assets/images/slider/mobile/nicholas-green-foule-concert-mobile.webp"
+                     class="d-block"
+                     alt="Description de l'image">
+              </picture>
+              
             </div>
             <div class="carousel-item">
-              <img src="https://tamsin-rouaud.github.io/NinaCarducci/assets/images/slider/edward-cisneros-bal-maries.webp" class="d-block w-100" alt="">
+              <picture>
+                <source srcset="./assets/images/slider/edward-cisneros-bal-maries.webp"
+                        media="(min-width: 1024px)">
+                <source srcset="./assets/images/slider/tablette/edward-cisneros-bal-maries-tablette.webp"
+                        media="(min-width: 768px)">
+                <img src="./assets/images/slider/mobile/edward-cisneros-bal-maries-mobile.webp"
+                     class="d-block"
+                     alt="Description de l'image">
+              </picture>
             </div>
            </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -134,24 +153,16 @@
         <h2 class="title">Portfolio</h2>
         <div class="container py-3">
           <picture class="gallery" style="display: none">
-            <source srcset="./assets/images/gallery/concerts/concert-aaron-paul.webp" type="image/webp">
-            <source srcset="./assets/images/gallery/entreprise/portrait-pro-ali-morshedlou.webp" type="image/webp">
-            <source srcset="./assets/images/gallery/entreprise/portrait-pro-jason-goodman.webp" type="image/webp">
-            <source srcset="./assets/images/gallery/mariage/mariage-mains-hannah-busing.webp" type="image/webp">
-            <source srcset="./assets/images/gallery/portraits/portrait-ade-tunji.webp" type="image/webp">
-            <source srcset="./assets/images/gallery/mariage/mariage-jakob-owens-sini.webp" type="image/webp">
-            <source srcset="./assets/images/gallery/portraits/portrait-nino-van-prattenburg.webp" type="image/webp">
-            <source srcset="./assets/images/gallery/concerts/concert-austin-neill.webp" type="image/webp">
-            <source srcset="./assets/images/gallery/entreprise/portrait-pro-mateus-campos-felipe.webp" type="image/webp">
-            <img data-gallery-tag="Concert" loading="lazy" class="gallery-item" src="./assets/images/gallery/concerts/concert-aaron-paul.jpg" alt="Jeux de lumières rouge dans un concert">
-            <img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/portrait-pro-ali-morshedlou.jpg" alt="Portrait jeune homme en costume">
-            <img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/portrait-pro-jason-goodman.jpg" alt="Une femme assise bureau avec d'autres personnes">
-            <img data-gallery-tag="Mariages" loading="lazy" class="gallery-item" src="./assets/images/gallery/mariage/mariage-mains-hannah-busing.jpg" alt="Union de mains d'un couple de marié">
-            <img data-gallery-tag="Portrait" loading="lazy" class="gallery-item" src="./assets/images/gallery/portraits/portrait-ade-tunji.jpg" alt="Homme fermant les yeux au soleil">
-            <img data-gallery-tag="Mariages" loading="lazy" class="gallery-item" src="./assets/images/gallery/mariage/mariage-jakob-owens-sini.jpg" alt="Jeune mariés  rigolant ">
-            <img data-gallery-tag="Portrait" loading="lazy" class="gallery-item" src="./assets/images/gallery/portraits/portrait-nino-van-prattenburg.jpg" alt="Jeune femme portant des lunettes">
-            <img data-gallery-tag="Concert" loading="lazy" class="gallery-item"  src="./assets/images/gallery/concerts/concert-austin-neill.jpg" alt="Homme avec micro nuage de fumée ">
-            <img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/portrait-pro-mateus-campos-felipe.jpg" alt="Jeune femme rigolant devant son ordinateur portable">
+
+            <img data-gallery-tag="Concert" loading="lazy" class="gallery-item" src="./assets/images/gallery/concerts/concert-aaron-paul.webp" alt="Jeux de lumières rouge dans un concert">
+            <img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/portrait-pro-ali-morshedlou.webp" alt="Portrait jeune homme en costume">
+            <img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/portrait-pro-jason-goodman.webp" alt="Une femme assise bureau avec d'autres personnes">
+            <img data-gallery-tag="Mariages" loading="lazy" class="gallery-item" src="./assets/images/gallery/mariage/mariage-mains-hannah-busing.webp" alt="Union de mains d'un couple de marié">
+            <img data-gallery-tag="Portrait" loading="lazy" class="gallery-item" src="./assets/images/gallery/portraits/portrait-ade-tunji.webp" alt="Homme fermant les yeux au soleil">
+            <img data-gallery-tag="Mariages" loading="lazy" class="gallery-item" src="./assets/images/gallery/mariage/mariage-jakob-owens-sini.webp" alt="Jeune mariés  rigolant ">
+            <img data-gallery-tag="Portrait" loading="lazy" class="gallery-item" src="./assets/images/gallery/portraits/portrait-nino-van-prattenburg.webp" alt="Jeune femme portant des lunettes">
+            <img data-gallery-tag="Concert" loading="lazy" class="gallery-item"  src="./assets/images/gallery/concerts/concert-austin-neill.webp" alt="Homme avec micro nuage de fumée ">
+            <img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/portrait-pro-mateus-campos-felipe.webp" alt="Jeune femme rigolant devant son ordinateur portable">
           </picture>
         </div>
         <div class="quote">
