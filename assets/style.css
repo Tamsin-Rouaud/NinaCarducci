@@ -249,6 +249,10 @@ input[type=submit] {
   .picture.right img {
     width: 100%
   }
+  .carrousel-item {
+    width: 1180px;
+    height: auto;
+  }
 }
 @media all and (max-width:1000px) {
   #about,
@@ -305,6 +309,11 @@ input[type=submit] {
   .picture.right img {
     width: 100%
   }
+  .carrousel-item {
+    width: 1000px;
+    height: auto;
+  }
+
 }
 @media all and (max-width:650px) {
   header {
@@ -341,5 +350,9 @@ input[type=submit] {
   }
   form {
     width: 100%
+  }
+  .carrousel-item {
+    width: 650px;
+    height: auto;
   }
 }
